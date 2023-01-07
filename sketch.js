@@ -26,14 +26,6 @@ function calcColor() {
   let rainbow = frameCount % 360;
   stroke(color(`hsl(${rainbow}, 100%, 50%)`)); // set the stroke color using the rainbow value
 }
-function mousePressed() {
-  isRunning = !isRunning; // toggle the running flag
-  if (isRunning) {
-    loop(); // start the draw() function being called repeatedly
-  } else {
-    noLoop(); // stop the draw() function from being called repeatedly
-  }
-}
 
 function branch(len) {
   line(0, 0, 0, -len);
@@ -47,6 +39,15 @@ function branch(len) {
     rotate(-angle);
     branch(len * 0.67);
     pop();
+  }
+}
+
+function mousePressed() {
+  isRunning = !isRunning; // toggle the running flag
+  if (isRunning) {
+    loop(); // start the draw() function being called repeatedly
+  } else {
+    noLoop(); // stop the draw() function from being called repeatedly
   }
 }
 
