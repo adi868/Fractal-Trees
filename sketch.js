@@ -19,7 +19,7 @@ function calcWeight() {
 }
 
 function calcAngle() {
-  angle = map(sin(frameCount / 60), -1, 1, 0, 3);
+  angle = map(sin(frameCount / 100), 0, 1, 0, 3);
 }
 
 function calcColor() {
@@ -54,8 +54,8 @@ function mousePressed() {
 function draw() {
   background(255);
   translate(width * 0.5, height);
-  branch(100);
-  calcWeight();
   calcAngle();
+  calcWeight();
   calcColor();
+  branch(100);
 }
