@@ -52,10 +52,6 @@ function mousePressed() {
 }
 
 function draw() {
-  if (!isRunning) {
-    // if the running flag is false, return early and do not update the angle or draw the lines
-    return;
-  }
   background(255);
   translate(width * 0.5, height);
   branch(100);
