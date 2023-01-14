@@ -1,12 +1,12 @@
 let isRunning = true; // flag to track the running state
 let angle = 0;
 
-// place functions at the top of the page before code calls functions, hoisted anyways but makes sure that fns are available to be called when needed, makes code easier to read and understand
 function setup() {
   createCanvas(500, 500);
   background(0);
   button = createButton("Pause Animation");
 }
+// place functions at the top of the page before code calls functions, hoisted anyways but makes sure that fns are available to be called when needed, makes code easier to read and understand
 
 function calcWeight() {
   //set to 5 as max range // larger scaling factor slow down the rate of change
