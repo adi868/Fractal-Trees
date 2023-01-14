@@ -47,7 +47,7 @@ function mousePressed() {
   if (isRunning) {
     loop(); // start the draw() function being called repeatedly
   } else {
-    noLoop(); // stop the draw() function from being called repeatedly
+    noLoop(); // stop the draw() function from being called repeatedly 
   }
 }
 
